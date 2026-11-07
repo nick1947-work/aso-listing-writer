@@ -1,0 +1,8 @@
+{
+  "name": "aso-listing-writer",
+  "description": "Builds a keyword strategy and writes complete Play Store / App Store listings, including Hindi and Hinglish, with a length and policy checker.",
+  "version": "1.0.0",
+  "author": { "name": "Creation Unicorn" },
+  "license": "MIT",
+  "keywords": ["aso", "google-play", "app-store", "android", "listing", "keywords", "hindi"]
+}

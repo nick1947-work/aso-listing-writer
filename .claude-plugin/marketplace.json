@@ -1,0 +1,12 @@
+{
+  "name": "creation-unicorn",
+  "owner": { "name": "Creation Unicorn" },
+  "plugins": [
+    {
+      "name": "aso-listing-writer",
+      "source": "./",
+      "description": "Builds a keyword strategy and writes complete Play Store / App Store listings, including Hindi and Hinglish, with a length and policy checker.",
+      "version": "1.0.0"
+    }
+  ]
+}
