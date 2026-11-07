@@ -1,0 +1,23 @@
+# Copy to .github/workflows/play-readiness.yml in YOUR APP repo.
+# Runs the Play readiness scan on every pull request and fails the check on blockers.
+name: Play readiness scan
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout app
+        uses: actions/checkout@v4
+      - name: Checkout skills repo
+        uses: actions/checkout@v4
+        with:
+          repository: nick1947-work/aso-listing-writer
+          path: .skills
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run scan
+        run: python .skills/skills/play-release-readiness/scripts/scan_project.py . --min-target 36

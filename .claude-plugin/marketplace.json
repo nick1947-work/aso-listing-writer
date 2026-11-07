@@ -1,0 +1,14 @@
+{
+  "name": "creation-unicorn",
+  "owner": {
+    "name": "Creation Unicorn"
+  },
+  "plugins": [
+    {
+      "name": "android-skills",
+      "source": "./",
+      "description": "Agent skills for Android and indie-app developers: Google Play release readiness (scan, privacy policy, terms, Data safety, launch-and-scale playbook) and ASO listing writing.",
+      "version": "1.0.0"
+    }
+  ]
+}

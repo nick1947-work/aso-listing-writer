@@ -1,0 +1,10 @@
+{
+  "name": "android-skills",
+  "description": "Agent skills for Android and indie-app developers: Google Play release readiness and ASO listing writing.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Creation Unicorn"
+  },
+  "license": "MIT",
+  "keywords": ["android", "google-play", "aso", "privacy-policy", "release", "flutter"]
+}

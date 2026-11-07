@@ -1,0 +1,13 @@
+name: test
+on: [push, pull_request]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sh skills/play-release-readiness/tests/run_tests.sh
+      - run: |
+          echo '{"primary_keyword":"expense tracker","title":"SpendWise: Expense Tracker","short_description":"Offline expense tracker. Scan bills.","full_description":"An expense tracker that works offline."}' > /tmp/l.json
+          python skills/aso-listing-writer/scripts/check_listing.py /tmp/l.json

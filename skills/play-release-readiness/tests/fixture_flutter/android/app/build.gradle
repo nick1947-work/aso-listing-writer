@@ -1,0 +1,4 @@
+plugins { id "com.android.application" }
+android {
+    defaultConfig { applicationId "com.acme.spendsafe"; minSdkVersion flutter.minSdkVersion; targetSdkVersion flutter.targetSdkVersion; versionCode 1 }
+}
